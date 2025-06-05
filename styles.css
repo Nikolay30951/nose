@@ -1,0 +1,64 @@
+body{
+    background-color: #111;
+    color: aliceblue;
+    text-align: center;
+    font-weight: 400;
+} 
+    
+.main-title{
+    display: block;
+    font-size: 2.5rem;
+}
+
+.subtitle {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cards {
+    position: relative;
+    width: 1200px;
+    height: 550px;
+    
+}
+
+.card{
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    background-color: hsl(0, 0%, 93%);
+  
+}
+
+.card--left,
+.card--right{
+   top: 150px; 
+}
+
+.card--top,
+.card--bottom{
+    left: 425px;
+}
+
+
+
+.card--left{
+    left: 0;
+    
+}
+
+.card--top{
+    top: 0;
+ 
+}
+
+.card--right{
+    right: 0;
+
+}
+
+.card--bottom{
+    bottom: 0;
+    
+}
