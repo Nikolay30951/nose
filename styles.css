@@ -104,3 +104,11 @@ body{
 .text-light{
     color: hsl(234, 12%, 34%);
 }
+
+.text-thin{
+    font-weight: 200;
+}
+
+.text-bold{
+    font-weight: 600;
+}
