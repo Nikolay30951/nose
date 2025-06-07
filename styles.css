@@ -1,114 +1,137 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
+body {
+  text-align: center;
+  font-weight: 400;
+  background-color: hsl(0, 0%, 93%);
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 2rem 1rem;
+}
 
-body{
-    text-align: center;
-    font-weight: 400;
-    background-color: hsl(0, 0%, 93%);
-    font-family: "Poppins", sans-serif;
-
-} 
-    
-.main-title{
-    display: block;
-    font-size: 2.5rem;
+.main-title {
+  display: block;
+  font-size: 2.5rem;
 }
 
 .subtitle {
-    width: 30%;
-    margin-left: auto;
-    margin-right: auto;
+  width: 90%;
+  max-width: 600px;
+  margin: 1rem auto 2rem;
 }
 
 .cards {
-    position: relative;
-    width: 1200px;
-    height: 550px;
-    
+  position: relative;
+  width: 1200px;
+  height: 550px;
+  margin: 0 auto;
 }
 
-.card{
-    position: absolute;
-    width: 350px;
-    height: 250px;
-    padding: 0 2em;
-    font-size: 0.9rem;
-    border-radius: 10px;
-    box-shadow: 5px 10px 10px hsl(204, 25%, 50%);
-    background-color: hsl(0, 0%, 93%);
-  
+.card {
+  position: absolute;
+  width: 350px;
+  height: 250px;
+  padding: 0 2em;
+  font-size: 0.9rem;
+  border-radius: 10px;
+  box-shadow: 5px 10px 10px hsl(204, 25%, 50%);
+  background-color: hsl(0, 0%, 93%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .cards_title,
-.cards_text{
-    text-align: left;
+.cards_text {
+  text-align: left;
 }
 
-.card__icon{
-    position: absolute;
-    right: 2em;
-    bottom: 2em;
+.card__icon {
+  position: absolute;
+  right: 2em;
+  bottom: 2em;
+  width: 40px;
+  height: 40px;
 }
 
-.card--cyan{
-    border-top: 5px solid hsl(180, 62%, 55%);
+.card--cyan {
+  border-top: 5px solid hsl(180, 62%, 55%);
 }
 
-.card--red{
-    border-top: 5px solid hsl(0, 78%, 62%);
+.card--red {
+  border-top: 5px solid hsl(0, 78%, 62%);
 }
 
-.card--orange{
-    border-top: 5px solid hsl(34, 97%, 64%);
+.card--orange {
+  border-top: 5px solid hsl(34, 97%, 64%);
 }
 
-.card--blue{
-    border-top: 5px solid hsl(212, 86%, 64%);
+.card--blue {
+  border-top: 5px solid hsl(212, 86%, 64%);
 }
 
-
-.card--left,
-.card--right{
-   top: 150px; 
+/* Layout en escritorio */
+.card--left, .card--right {
+  top: 150px;
 }
 
-.card--top,
-.card--bottom{
-    left: 425px;
+.card--top, .card--bottom {
+  left: 425px;
 }
 
-
-
-.card--left{
-    left: 0;
-    
+.card--left {
+  left: 0;
 }
 
-.card--top{
-    top: 0;
- 
+.card--top {
+  top: 0;
 }
 
-.card--right{
-    right: 0;
-
+.card--right {
+  right: 0;
 }
 
-.card--bottom{
-    bottom: 0;
-    
+.card--bottom {
+  bottom: 0;
 }
 
-.text-light{
-    color: hsl(234, 12%, 34%);
+.text-light {
+  color: hsl(234, 12%, 34%);
 }
 
-.text-thin{
-    font-weight: 200;
+.text-thin {
+  font-weight: 200;
 }
 
-.text-bold{
-    font-weight: 600;
+.text-bold {
+  font-weight: 600;
+}
+
+/* 👇 Responsive mode */
+@media (max-width: 768px) {
+  .cards {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+
+  .card {
+    position: static;
+    width: 90%;
+    max-width: 350px;
+    height: auto;
+  }
+
+  .card__icon {
+    position: static;
+    align-self: flex-end;
+    margin-top: 1rem;
+  }
 }
